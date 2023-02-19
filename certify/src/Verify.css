@@ -1,0 +1,11 @@
+.center5 {
+    border: 2px solid grey;
+    background-color: rgb(255, 255, 255);
+    margin-top: 200px;
+    margin-left: 400px;
+
+    width: 50%;
+    padding-top: 50px;
+    /* padding: 10px; */
+    border-radius: 30px;
+ }

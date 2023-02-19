@@ -1,0 +1,9 @@
+.center2 {
+    border: 2px solid grey;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    width: 50%;
+    padding-top: 50px;
+    /* padding: 10px; */
+    border-radius: 30px;
+ }
