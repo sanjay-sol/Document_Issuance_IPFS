@@ -34,8 +34,8 @@ function Share({contract , provider , signer}) {
         <input type="text" value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Qmac....."/>
       </label>
       <br />
-      <button className="btn btn-primary" onClick={sendMessage}>Send Certificate</button>
-      <button  className="btn btn-primary" onClick={getMessage}>Get Certificate</button>
+      <button className="button" onClick={sendMessage}>Send Document</button>
+      <button  className="button" onClick={getMessage}>Get Document</button>
       <p> <b>IPFS Hash:</b> {message}</p>
      <div className="img-cont">
      <a href={link1}  target="_blank" rel="noreferrer">

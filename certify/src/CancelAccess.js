@@ -35,7 +35,7 @@ const CancelAccess = ({contract}) => {
     // console.log(address);
     return (
     <>
-    <div className='center2'>
+    <div className='center24'>
     {/* <form className="form-inline"> */}
   <div className="mx-5 form-group">
     <label htmlFor="exampleInputName2"> Address</label>

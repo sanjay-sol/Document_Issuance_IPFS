@@ -7,11 +7,11 @@
   
     margin: 10px;
   }
-  .container5{
-    border: 2px solid black;
+  /* .container5{
+    border: 2px solid rgb(54, 30, 30);
     border-radius: 10px;
-    background-color: rgb(211, 255, 240);
-  }
+    background-color: rgb(215, 252, 230);
+  } */
   .cont1{
     margin-top: 50px;
   }
@@ -63,7 +63,7 @@
   .image-container img {
     width: 200px;
     height: 200px;
-    border:3px solid black;
+    border:1px solid black;
     border-radius: 10px;
     /* border-radius: 50%; */
   }

@@ -15,7 +15,7 @@ const Verify = () => {
     <input type="text" className="form-control" id="exampleInputName2" placeholder="Qmac..."/>
   </div>
   <br />
-  <button type="submit" className="btn btn-primary">Verify</button>
+  <button type="submit"  className="button button2"  >Verify</button>
   <p></p>
 </form>
     </div>

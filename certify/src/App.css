@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+body{
+  background-size: cover;
+  background-image: url("pap.jpeg");
+  /* background-color: rgb(105, 184, 253);
+   */
+   /* background: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fgfycat.com%2Funfoldedremorsefuljackal-people-blogs-gingertiger-blockchain&psig=AOvVaw3rhYz9_8A9Zcgn1SI-URBH&ust=1677496125968000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCNiRxJeGs_0CFQAAAAAdAAAAABAE); */
+}

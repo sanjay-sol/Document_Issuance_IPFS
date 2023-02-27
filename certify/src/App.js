@@ -6,7 +6,6 @@ import { ethers } from "ethers";
 import { useState, useEffect } from "react";
 import Uploadabi from './artifacts/contracts/Upload.sol/Upload.json';
 import Navbar from './Navbar';
-// import AboutPerson from './AboutPerson';
 import Share from './Share';
 import GiveAccess from './GiveAccess';
 import Upload from './Upload';
@@ -20,10 +19,7 @@ function App() {
   const [provider, setProvider] = useState(null);
   const [contract, setContract] = useState(null);
   const [signer, setSigner] = useState(null);
-//QmcNrvZkqW4VocHsWELtumwHNJumKZaUtPkmyfv85Es6c9
-//QmcRu2J4yBDY7DHbQNYXhuDCbuRXeAEm
-//QmXUrh52FT8XY4iNWsCMgaU5zC8mvmuD2dXqT1iXi8Jf1q//
-//0x70997970C51812dc3A010C7d01b50e0d17dc79C8
+
   useEffect(() => {
     const provider = new ethers.providers.Web3Provider(window.ethereum);
 
@@ -49,14 +45,12 @@ function App() {
           Uploadabi.abi,
           signer
         );
-        // console.log(contract);
-        // console.log(provider);
+       
         setContract(contract);
         setProvider(provider);
       } else {
         console.error("Metamask is not installed");
       }
-      //0xC9571BF28ACe12cd7f7091764c268AaCa2F3D091
     };
     provider && loadProvider();
   }, []);

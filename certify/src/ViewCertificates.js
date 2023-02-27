@@ -1,10 +1,9 @@
 
 import { useState } from "react";
  import "./ViewCertificates.css";
-// import FileUpload from "./FileUpload";
 const ViewCertificates = ({ contract, account }) => {
   const [data, setData] = useState("");
-  // const [name, setnama] = useState("");
+  // const [name, setName] = useState("");
 //QmSjG4SHwiYqQKPznrjXWDHoD4j12excmWDWjjBN7f2Jjb
   const getdata = async () => {
     let dataArray;
@@ -24,14 +23,10 @@ const ViewCertificates = ({ contract, account }) => {
     if (!isEmpty) {
       const str = dataArray.toString();
       const str_array = str.split(",");
-      // console.log(str);
-      // console.log(str_array);
+      console.log( "str",str);
       const images = str_array.map((item, i) => {
            const link1 = `https://ipfs.io/ipfs/${item.substring(7)}/`;
-// console.log(item);
-// console.log(
-//   "hello"
-// );
+console.log("item",item);
         return (
             
           <div className="image-container"> 
@@ -66,7 +61,7 @@ const ViewCertificates = ({ contract, account }) => {
   };
   return (
     <>
-      {/* <div className="image-list">{data}</div> */}
+      
       <div className="cont1">
       <input
         type="text"
@@ -75,12 +70,12 @@ const ViewCertificates = ({ contract, account }) => {
       ></input>
       <br />
       <p></p>
-      <button className="btn btn-success" onClick={getdata}>
-        View Certificates
+      <button className="button" onClick={getdata}>
+        View Documnets
       </button>
       </div>
       <div className="container5">
-        <div><i> <b><u>YOUR CERTIFICATES</u> </b></i>  </div>
+        <div><i> <b><u>YOUR DOCUMENTS</u> </b></i>  </div>
       <div className="image-list">{data}</div>
       </div>
     </>
