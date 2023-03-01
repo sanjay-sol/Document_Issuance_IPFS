@@ -2,6 +2,7 @@
 import './Navbar.css';
 import './png.png';
 export default function Navbar(){
+  
     return (
         <>
         {/* <Link to="/">Home</Link>
@@ -13,7 +14,7 @@ export default function Navbar(){
     {/* <a className="navbar-brand text-black" href="/"><em><b> Document Issuance</b></em> </a> */}
     <a class="navbar-brand" href="/">
       <img src="https://docs.ipfs.tech/images/ipfs-logo.svg" alt="..." height="60"></img>
-      <strong>D-Docs</strong>
+      <strong className='text-white'>D-Docs</strong>
     </a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
@@ -21,26 +22,26 @@ export default function Navbar(){
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <a className="nav-link active text-black " aria-current="page" href="/"><b>Home</b> </a>
+          <a className="nav-link active text-white bg-secondary rounded" aria-current="page" href="/"><b>Home</b> </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link text-black " href="/share"><b>Share</b></a>
+          <a className="nav-link text-white bg-secondary rounded" href="/share"><b>Share</b></a>
         </li>
         <li className="nav-item">
-          <a className="nav-link text-black " href="/upload"><b>Upload</b></a>
+          <a className="nav-link text-white bg-secondary rounded" href="/upload"><b>Upload</b></a>
         </li>
         <li className="nav-item">
-          <a className="nav-link text-black " href="/giveaccess"><b>Give Access</b> </a>
+          <a className="nav-link text-white bg-secondary rounded" href="/giveaccess"><b>Give Access</b> </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link text-black " href="/cancelaccess"><b>Cancel Access</b> </a>
+          <a className="nav-link text-white bg-secondary rounded" href="/cancelaccess"><b>Cancel Access</b> </a>
         </li>
         
-        <li className="nav-item">
-          <a className="nav-link text-black " href="/viewcertificates"><b>View Documents</b> </a>
+        <li className="nav-item ">
+          <a className="nav-link text-white bg-secondary rounded" href="/viewcertificates"><b>View Documents</b> </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link text-black " href="/verify"><b>Verify</b> </a>
+          <a className="nav-link text-white bg-secondary rounded" href="/verify"><b>Verify</b> </a>
         </li>   
       </ul>
       

@@ -10,11 +10,11 @@ console.log(provider);
     return (
         <>
       
-    <div className='center4'>
+    <div className='center4 text-white'>
     <div> <b>Current Account :  </b>{account ? account : "Not connected"}</div>
     
     <br />
-{account ? <button type="button" className="button button2">Wallet Connected</button> : <button type="button" className="btn btn-success">Connected Wallet</button>  }
+{account ? <button type="button" className="button button2"> Wallet Connected</button> : <button type="button" className="btn btn-success">Connected Wallet</button>  }
 
         {/* <button type="button" className="btn btn-success">Connect Wallet</button> */}
         <p></p>

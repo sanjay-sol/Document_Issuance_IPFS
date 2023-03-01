@@ -20,23 +20,23 @@ function Share({contract , provider , signer}) {
     console.log("Message retrieved:", message);
   };
 
-
+//QmX8Vt1SKwnw4tAFm5Wh6xjTuwpPDtYhfNVixf1wznYsv6
   return (
-    <div>
-      <h1 className="fst-italic"> Send IPFS Hash </h1>
+    <div >
+      <h1 className="fst-italic text-white"> Send IPFS Hash </h1>
       <label>
-         <strong>Student address:</strong> 
+         <b className="text-white">Receiver Address:</b> 
         <input type="text" value={receiverAddress} onChange={(e) => setReceiverAddress(e.target.value)} placeholder="OxD12...." />
       </label>
       <p></p>
       <label>
-      <strong>IPFS Hash:</strong>
+      <b className="text-white">IPFS Hash:</b>
         <input type="text" value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Qmac....."/>
       </label>
       <br />
       <button className="button" onClick={sendMessage}>Send Document</button>
       <button  className="button" onClick={getMessage}>Get Document</button>
-      <p> <b>IPFS Hash:</b> {message}</p>
+      <p className="text-white"> <b>IPFS Hash:</b> {message}</p>
      <div className="img-cont">
      <a href={link1}  target="_blank" rel="noreferrer">
             <img
@@ -48,7 +48,7 @@ function Share({contract , provider , signer}) {
           </a>
 
      </div>
-      {/* <p><b>To View Your Certificate Go to :</b> <ins> https://ipfs.io/ipfs/"YOUR IPFS HASH"/ </ins></p> */}
+      {/* <p>QmSjG4SHwiYqQKPznrjXWDHoD4j12excmWDWjjBN7f2Jjb<b>To View Your Certificate Go to :</b> <ins> https://ipfs.io/ipfs/"YOUR IPFS HASH"/ </ins></p> */}
     </div>
   );
 }

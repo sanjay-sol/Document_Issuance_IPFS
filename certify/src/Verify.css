@@ -9,7 +9,7 @@
     padding-top: 50px;
     /* padding: 10px; */
     border-radius: 30px;
-    box-shadow: 5px 10px 8px 10px #888888;
+    /* box-shadow: 5px 10px 8px 10px #888888; */
  }
  .button2:hover {
     box-shadow: 0 12px 16px 0 rgba(92, 250, 108, 0.24), 0 17px 50px 0 rgba(255, 46, 46, 0.19);

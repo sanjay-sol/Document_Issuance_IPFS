@@ -38,7 +38,7 @@ const CancelAccess = ({contract}) => {
     <div className='center24'>
     {/* <form className="form-inline"> */}
   <div className="mx-5 form-group">
-    <label htmlFor="exampleInputName2"> Address</label>
+    <label htmlFor="exampleInputName2"> Address : </label>
     <input type="text" className="address"  placeholder="0x....."/>
   </div>
   {/* <br />

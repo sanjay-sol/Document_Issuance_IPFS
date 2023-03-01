@@ -77,7 +77,7 @@ const Upload = ({ contract, account, provider  }) => {
         </button>
         {ipfshash ? (
         <div>
-          <p><b>IPFS Hash:</b>  {ipfshash}</p>
+          <p className="text-white"><b className="text-white">IPFS Hash:</b>  {ipfshash}</p>
         </div>
       ) : null}
         {/* <span   >{hashid}</span> */}

@@ -39,8 +39,8 @@ const GiveAccess = ({contract}) => {
     <div className='center23'>
     {/* <form className="form-inline"> */}
   <div className="mx-5 form-group">
-    <label htmlFor="exampleInputName2"> Address</label>
-    <input type="text" className="address"  placeholder="0x....."/>
+    <label htmlFor="exampleInputName2 "> Address : </label>
+    <input type="text" className="address"  placeholder="0x7824.."/>
   </div>
   <br />
          <form id="myForm">

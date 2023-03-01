@@ -8,7 +8,7 @@
     padding-top: 50px;
     /* padding: 10px; */
     border-radius: 10px;
-    box-shadow: 5px 10px 8px 10px #888888;
+    /* box-shadow: 5px 7px 8px 7px #e5dddd; */
  }
 
   .button {
@@ -27,4 +27,7 @@
   }
   .button2:hover {
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.24), 0 20px 80px 0 rgba(0, 0, 0, 0.19);
+  }
+  label{
+    color: #e5dddd;
   }

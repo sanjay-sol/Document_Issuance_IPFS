@@ -25,31 +25,39 @@ const ViewCertificates = ({ contract, account }) => {
       const str_array = str.split(",");
       console.log( "str",str);
       const images = str_array.map((item, i) => {
-           const link1 = `https://ipfs.io/ipfs/${item.substring(7)}/`;
+          //  const link1 = `https://ipfs.io/ipfs/${item.substring(7)}/`;QmSjG4SHwiYqQKPznrjXWDHoD4j12excmWDWjjBN7f2Jjb
 console.log("item",item);
+//QmSjG4SHwiYqQKPznrjXWDHoD4j12excmWDWjjBN7f2Jjb
         return (
-            
-          <div className="image-container"> 
+          <div className="card">
           <a href={item} key={i} target="_blank" rel="noreferrer">
-            <img
-              key={i}
-              src={`https://gateway.pinata.cloud/ipfs/${item.substring(6)}`}
-              alt="certificate"
-              className="image-list"
-            ></img>
-          </a>
-          
-          {/* <span>Name:</span>
-          <span>{window.name}</span> */}
-          {/* <p>Id:{i}</p> */}
-          <span> <b> Id : </b>{i}</span>
-          {/* <p></p>
-          br */}
-          <br />
-          <a  href={link1} target="_blank" rel="noreferrer" >{item.substring(7)}</a>
+<img key={i} src={`https://gateway.pinata.cloud/ipfs/${item.substring(6)}`} alt="Avatar"  /></a>
+<div className="container  ">
+{/* <a className="text-black text-decoration-none  " href={link1} target="_blank" rel="noreferrer" >{item.substring(7)}</a> */}
+  <p> <u> {item.substring(7)}</u></p> 
+</div>
+</div>
+          // <div className="image-container"> 
+          // <a href={item} key={i} target="_blank" rel="noreferrer">
+          //   <img
+          //     key={i}
+          //     src={`https://gateway.pinata.cloud/ipfs/${item.substring(6)}`}
+          //     alt="certificate"
+          //     className="image-list"
+          //   ></img>
+          // </a>
+          //
+          // {/* <span>Name:</span>
+          // <span>{window.name}</span> */}
+          // {/* <p>Id:{i}</p> */}
+          // {/* <span > <b > Id : </b>{i}</span> */}
+          // {/* <p></p>
+          // br */}
+          // <br />
+          // <a  href={link1} target="_blank" rel="noreferrer" >{item.substring(7)}</a>
          
 
-          </div>
+          // </div>
         );
 
       });
@@ -75,7 +83,7 @@ console.log("item",item);
       </button>
       </div>
       <div className="container5">
-        <div><i> <b><u>YOUR DOCUMENTS</u> </b></i>  </div>
+        <div className="text-white"><i> <b><u>YOUR DOCUMENTS</u> </b></i>  </div>
       <div className="image-list">{data}</div>
       </div>
     </>
