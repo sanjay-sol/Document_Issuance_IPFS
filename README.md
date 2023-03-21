@@ -11,7 +11,7 @@ clone the project by running : git clone https://github.com/sanjay-sol/Document_
   install dependencies by runnin "npm install" in both certify and root folders . 
   
 # Step 3 :
-  Split the terminal into 3 parts , 1 for certify folder and 2 for main folder .<img width="1440" alt="paste address" src="https://user-images.githubusercontent.com/114111046/226571772-41240ed8-ce01-4bd1-8144-a6ec1d9f7683.png">
+  Split the terminal into 3 parts , 1 for certify folder and 2 for main folder .<img width="800" alt="paste address" src="https://user-images.githubusercontent.com/114111046/226571772-41240ed8-ce01-4bd1-8144-a6ec1d9f7683.png">
 
 
 # step 4 : 
