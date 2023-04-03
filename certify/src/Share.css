@@ -18,10 +18,10 @@ button{
     margin: 40px;
 }
 .img-cont img {
-    width: 200px;
-    height: 200px;
-    border:3px solid black;
-    border-radius: 10px;
+    width: 300px;
+    height: 450px;
+    /* border:3px solid black; */
+    /* border-radius: 10px; */
     /* border-radius: 50%; */
   }
   .button {

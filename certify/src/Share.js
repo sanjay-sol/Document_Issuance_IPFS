@@ -5,7 +5,7 @@ function Share({contract , provider , signer}) {
   const [message, setMessage] = useState("");
   const link1 = `https://ipfs.io/ipfs/${message}/`;
 
-//0x512aC9b6E1Fd5BD24B51c09334a67a766E4113C7
+//0xbDA5747bFD65F08deb54cb465eB87D40e51B197E
   const sendMessage = async () => {
     // const signer = provider.getSigner();
     const tx = await contract.sendMessage(receiverAddress, message);
@@ -23,20 +23,20 @@ function Share({contract , provider , signer}) {
 //QmX8Vt1SKwnw4tAFm5Wh6xjTuwpPDtYhfNVixf1wznYsv6
   return (
     <div >
-      <h1 className="fst-italic text-white"> Send IPFS Hash </h1>
+      <h1 className=" text-black"> SHARE FILE </h1>
       <label>
-         <b className="text-white">Receiver Address:</b> 
+         <b className="text-black">Receiver Address:</b> 
         <input type="text" value={receiverAddress} onChange={(e) => setReceiverAddress(e.target.value)} placeholder="OxD12...." />
       </label>
       <p></p>
       <label>
-      <b className="text-white">IPFS Hash:</b>
+      <b className="text-black">IPFS Hash:</b>
         <input type="text" value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Qmac....."/>
       </label>
       <br />
       <button className="button" onClick={sendMessage}>Send Document</button>
       <button  className="button" onClick={getMessage}>Get Document</button>
-      <p className="text-white"> <b>IPFS Hash:</b> {message}</p>
+      <p className="text-black"> <b>IPFS Hash:</b> {message}</p>
      <div className="img-cont">
      <a href={link1}  target="_blank" rel="noreferrer">
             <img

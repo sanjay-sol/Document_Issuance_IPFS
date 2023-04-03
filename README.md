@@ -1,3 +1,4 @@
+
 # Overview of project : 
 
 Document and certificate issuance through IPFS (InterPlanetary File System) offers numerous benefits over traditional methods of document storage and distribution. IPFS is a decentralized and distributed file system that provides secure and reliable access to documents and certificates. By using IPFS, documents and certificates can be stored on a decentralized network, eliminating the need for centralized storage and reducing the risk of data breaches. Additionally, IPFS allows for quick and easy distribution of documents and certificates, enabling organizations to issue and verify credentials more efficiently. Overall, document and certificate issuance through IPFS offers a more secure, efficient, and reliable solution for storing and distributing important documents and credentials.
@@ -60,6 +61,7 @@ clone the project by running : git clone https://github.com/sanjay-sol/Document_
 # 9 ) SO Now Class teacher can't view the certificates of Dean coz dean took access rights 
 
 <img width="600" alt="teacher after disallow" src="https://user-images.githubusercontent.com/114111046/226573985-cf04a78e-768d-4e93-a174-2baff768dbff.png">
+
 
 
 

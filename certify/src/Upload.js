@@ -57,6 +57,7 @@ const Upload = ({ contract, account, provider  }) => {
   return (
     <>
     <div className="top1">
+      <strong className="text-xxl-center">UPLOAD TO IPFS NETWORK</strong>
     <div className="top">
      
       <form className="form" onSubmit={handleSubmit}>
@@ -70,14 +71,15 @@ const Upload = ({ contract, account, provider  }) => {
           id="file-upload"
           name="data"
           onChange={retrieveFile}
+          multiple
         />
-        <span className="textArea"> Image: <u>{fileName}</u></span>
+        <span className="textArea text-black"> Image: <u>{fileName}</u></span>
         <button type="submit" className="upload" disabled={!file}>
           Upload
         </button>
         {ipfshash ? (
-        <div>
-          <p className="text-white"><b className="text-white">IPFS Hash:</b>  {ipfshash}</p>
+        <div >
+          <p className="text-black"><b className="text-black">IPFS Hash:</b>  {ipfshash}</p>
         </div>
       ) : null}
         {/* <span   >{hashid}</span> */}

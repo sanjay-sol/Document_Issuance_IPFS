@@ -1,3 +1,4 @@
+// import axios from "axios";
 
 import { useState } from "react";
  import "./ViewCertificates.css";
@@ -5,6 +6,12 @@ const ViewCertificates = ({ contract, account }) => {
   const [data, setData] = useState("");
   // const [name, setName] = useState("");
 //QmSjG4SHwiYqQKPznrjXWDHoD4j12excmWDWjjBN7f2Jjb
+// useEffect(()=>{
+//     getdata()
+// },[])
+
+
+
   const getdata = async () => {
     let dataArray;
     const Otheraddress = document.querySelector(".address").value;
@@ -27,17 +34,23 @@ const ViewCertificates = ({ contract, account }) => {
       const images = str_array.map((item, i) => {
           //  const link1 = `https://ipfs.io/ipfs/${item.substring(7)}/`;QmSjG4SHwiYqQKPznrjXWDHoD4j12excmWDWjjBN7f2Jjb
 console.log("item",item);
+
 //QmSjG4SHwiYqQKPznrjXWDHoD4j12excmWDWjjBN7f2Jjb
         return (
-          <div className="card">
+          <div className="card bg-black">
           <a href={item} key={i} target="_blank" rel="noreferrer">
-<img key={i} src={`https://gateway.pinata.cloud/ipfs/${item.substring(6)}`} alt="Avatar"  /></a>
-<div className="container  ">
+<img key={i} src={`https://gateway.pinata.cloud/ipfs/${item.substring(6)}`} alt="vid"  /></a>
+<div className="container text-white  ">
 {/* <a className="text-black text-decoration-none  " href={link1} target="_blank" rel="noreferrer" >{item.substring(7)}</a> */}
-  <p> <u> {item.substring(7)}</u></p> 
+   <p>{item.substring(7)}</p> 
+  <div className="imgcont">
+  <img src={`https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://ipfs.io/ipfs/${item.substring(6)}`} download alt="img" />
+
+  </div>
+
 </div>
 </div>
-          // <div className="image-container"> 
+          // <div className="image-container"> QmTVgVJHSmoMqKKSazYQuVExLwyUThqXn158Ymu2amZVBc
           // <a href={item} key={i} target="_blank" rel="noreferrer">
           //   <img
           //     key={i}
@@ -67,6 +80,7 @@ console.log("item",item);
     }
 
   };
+  
   return (
     <>
       
@@ -79,11 +93,12 @@ console.log("item",item);
       <br />
       <p></p>
       <button className="button" onClick={getdata}>
-        View Documnets
+        View Files
       </button>
       </div>
       <div className="container5">
-        <div className="text-white"><i> <b><u>YOUR DOCUMENTS</u> </b></i>  </div>
+        
+        <div className=" text-black"> <b><i>FILES OF </i> <u className="text-black-50">  {account}</u> </b>  </div>
       <div className="image-list">{data}</div>
       </div>
     </>
