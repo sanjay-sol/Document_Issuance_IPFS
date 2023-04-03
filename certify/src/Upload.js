@@ -18,8 +18,8 @@ const Upload = ({ contract, account, provider  }) => {
           url: "https://api.pinata.cloud/pinning/pinFileToIPFS",
           data: formData,
           headers: {
-            pinata_api_key: process.env.API_KEY,
-            pinata_secret_api_key: process.env.API_SECRET_KEY,
+            pinata_api_key: `e75e19c7849a9d3fe087`,
+            pinata_secret_api_key: `87540f7529c5186bd1111fdf9ef7bb3041897a9abbdee14742f6be09be931f54`,
             "Content-Type": "multipart/form-data",
           },
         });
@@ -57,6 +57,7 @@ const Upload = ({ contract, account, provider  }) => {
   return (
     <>
     <div className="top1">
+      <strong className="text-xxl-center">UPLOAD TO IPFS NETWORK</strong>
     <div className="top">
      
       <form className="form" onSubmit={handleSubmit}>
@@ -70,14 +71,15 @@ const Upload = ({ contract, account, provider  }) => {
           id="file-upload"
           name="data"
           onChange={retrieveFile}
+          multiple
         />
-        <span className="textArea"> Image: <u>{fileName}</u></span>
+        <span className="textArea text-black"> Image: <u>{fileName}</u></span>
         <button type="submit" className="upload" disabled={!file}>
           Upload
         </button>
         {ipfshash ? (
-        <div>
-          <p className="text-white"><b className="text-white">IPFS Hash:</b>  {ipfshash}</p>
+        <div >
+          <p className="text-black"><b className="text-black">IPFS Hash:</b>  {ipfshash}</p>
         </div>
       ) : null}
         {/* <span   >{hashid}</span> */}
